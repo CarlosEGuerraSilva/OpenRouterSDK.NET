@@ -8,7 +8,7 @@ Developer-friendly & type-safe Csharp SDK specifically catered to leverage *Open
 
 <br /><br />
 > [!IMPORTANT]
-> This SDK is not yet ready for production use. To complete setup please follow the steps outlined in your [workspace](https://app.speakeasy.com/org/carlosedgusi/main). Delete this section before > publishing to a package manager.
+> This SDK is not yet ready for production use. Still in active development, and there may be breaking changes without a major version update. We recommend pinning usage to a specific package version until the SDK reaches a stable release.
 
 <!-- Start Summary [summary] -->
 ## Summary

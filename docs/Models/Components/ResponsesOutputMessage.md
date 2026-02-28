@@ -1,0 +1,14 @@
+# ResponsesOutputMessage
+
+An output message item
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Id`                                                                                            | *string*                                                                                        | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Role`                                                                                          | [ResponsesOutputMessageRole](../../Models/Components/ResponsesOutputMessageRole.md)             | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Type`                                                                                          | [ResponsesOutputMessageType](../../Models/Components/ResponsesOutputMessageType.md)             | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Content`                                                                                       | List<[ResponsesOutputMessageContent](../../Models/Components/ResponsesOutputMessageContent.md)> | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Status`                                                                                        | [ResponsesOutputMessageStatus](../../Models/Components/ResponsesOutputMessageStatus.md)         | :heavy_minus_sign:                                                                              | N/A                                                                                             |

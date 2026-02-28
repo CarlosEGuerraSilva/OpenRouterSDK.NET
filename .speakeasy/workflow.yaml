@@ -1,0 +1,24 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    OpenRouter API:
+        inputs:
+            - location: https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/refs/heads/main/.speakeasy/in.openapi.yaml
+        overlays:
+            - location: .speakeasy/overlays/open-enums.overlay.yaml
+            - location: .speakeasy/overlays/remove-rss-responses.overlay.yaml
+            - location: .speakeasy/overlays/add-headers.overlay.yaml
+            - location: .speakeasy/overlays/csharp-naming-fixes.overlay.yaml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/carlosedgusi/main/open-router-api
+targets:
+    open-router-sdk-net:
+        target: csharp
+        source: OpenRouter API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/carlosedgusi/main/open-router-api-csharp-code-samples
+            labelOverride:
+                fixedValue: Csharp (SDK)
+            blocking: false

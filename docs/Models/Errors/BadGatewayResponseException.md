@@ -1,0 +1,12 @@
+# BadGatewayResponseException
+
+Bad Gateway - Provider/upstream API failure
+
+
+## Fields
+
+| Field                                                                                 | Type                                                                                  | Required                                                                              | Description                                                                           | Example                                                                               |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `Error`                                                                               | [BadGatewayResponseErrorData](../../Models/Components/BadGatewayResponseErrorData.md) | :heavy_check_mark:                                                                    | Error data for BadGatewayResponse                                                     | {<br/>"code": 502,<br/>"message": "Provider returned error"<br/>}                     |
+| `UserId`                                                                              | *string*                                                                              | :heavy_minus_sign:                                                                    | N/A                                                                                   |                                                                                       |
+| `HttpMeta`                                                                            | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                               | :heavy_check_mark:                                                                    | N/A                                                                                   |                                                                                       |

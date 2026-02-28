@@ -1,0 +1,9 @@
+# BulkUnassignKeysFromGuardrailResponse
+
+
+## Fields
+
+| Field                                                                                                           | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `HttpMeta`                                                                                                      | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                                         | :heavy_check_mark:                                                                                              | N/A                                                                                                             |
+| `Object`                                                                                                        | [BulkUnassignKeysFromGuardrailResponseBody](../../Models/Requests/BulkUnassignKeysFromGuardrailResponseBody.md) | :heavy_minus_sign:                                                                                              | Unassignment result                                                                                             |

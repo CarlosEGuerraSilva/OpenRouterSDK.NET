@@ -1,0 +1,11 @@
+# Logprob
+
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `Token`                                                                                       | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |
+| `Bytes`                                                                                       | List<*double*>                                                                                | :heavy_check_mark:                                                                            | N/A                                                                                           |
+| `LogprobValue`                                                                                | *double*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |
+| `TopLogprobs`                                                                                 | List<[ResponseOutputTextTopLogprob](../../Models/Components/ResponseOutputTextTopLogprob.md)> | :heavy_check_mark:                                                                            | N/A                                                                                           |

@@ -1,0 +1,14 @@
+# ProviderResponse
+
+
+## Fields
+
+| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `Id`                                                                  | *string*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `EndpointId`                                                          | *string*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `ModelPermaslug`                                                      | *string*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `ProviderName`                                                        | [Models.Requests.ProviderName](../../Models/Requests/ProviderName.md) | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `Status`                                                              | *double*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
+| `Latency`                                                             | *double*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `IsByok`                                                              | *bool*                                                                | :heavy_minus_sign:                                                    | N/A                                                                   |

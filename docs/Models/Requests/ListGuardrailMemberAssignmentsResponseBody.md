@@ -1,0 +1,11 @@
+# ListGuardrailMemberAssignmentsResponseBody
+
+List of member assignments
+
+
+## Fields
+
+| Field                                                                                                   | Type                                                                                                    | Required                                                                                                | Description                                                                                             | Example                                                                                                 |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `Data`                                                                                                  | List<[ListGuardrailMemberAssignmentsData](../../Models/Requests/ListGuardrailMemberAssignmentsData.md)> | :heavy_check_mark:                                                                                      | List of member assignments                                                                              |                                                                                                         |
+| `TotalCount`                                                                                            | *double*                                                                                                | :heavy_check_mark:                                                                                      | Total number of member assignments                                                                      | 10                                                                                                      |

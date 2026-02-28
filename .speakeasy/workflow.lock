@@ -1,0 +1,42 @@
+speakeasyVersion: 1.734.1
+sources:
+    OpenRouter API:
+        sourceNamespace: open-router-api
+        sourceRevisionDigest: sha256:b3c55095523afbfcfd9c7c536e6f34c90cb1084d54e98c45517b458469a4e793
+        sourceBlobDigest: sha256:2a230f77d3bb51773cc79488e803c22e9768f05c51a1d53ac6b31d4527ff60b9
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    open-router-sdk-net:
+        source: OpenRouter API
+        sourceNamespace: open-router-api
+        sourceRevisionDigest: sha256:b3c55095523afbfcfd9c7c536e6f34c90cb1084d54e98c45517b458469a4e793
+        sourceBlobDigest: sha256:2a230f77d3bb51773cc79488e803c22e9768f05c51a1d53ac6b31d4527ff60b9
+        codeSamplesNamespace: open-router-api-csharp-code-samples
+        codeSamplesRevisionDigest: sha256:04232ed2393ee31129eed14e7515349f9df093c94aa9023b67da351c48bd5e9e
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        OpenRouter API:
+            inputs:
+                - location: https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/refs/heads/main/.speakeasy/in.openapi.yaml
+            overlays:
+                - location: .speakeasy/overlays/open-enums.overlay.yaml
+                - location: .speakeasy/overlays/remove-rss-responses.overlay.yaml
+                - location: .speakeasy/overlays/add-headers.overlay.yaml
+                - location: .speakeasy/overlays/csharp-naming-fixes.overlay.yaml
+            output: .speakeasy/out.openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/carlosedgusi/main/open-router-api
+    targets:
+        open-router-sdk-net:
+            target: csharp
+            source: OpenRouter API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/carlosedgusi/main/open-router-api-csharp-code-samples
+                labelOverride:
+                    fixedValue: Csharp (SDK)
+                blocking: false

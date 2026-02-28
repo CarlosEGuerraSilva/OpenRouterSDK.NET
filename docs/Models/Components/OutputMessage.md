@@ -1,0 +1,12 @@
+# OutputMessage
+
+
+## Fields
+
+| Field                                                                         | Type                                                                          | Required                                                                      | Description                                                                   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `Id`                                                                          | *string*                                                                      | :heavy_check_mark:                                                            | N/A                                                                           |
+| `Role`                                                                        | [OutputMessageRole](../../Models/Components/OutputMessageRole.md)             | :heavy_check_mark:                                                            | N/A                                                                           |
+| `Type`                                                                        | [OutputMessageType](../../Models/Components/OutputMessageType.md)             | :heavy_check_mark:                                                            | N/A                                                                           |
+| `Content`                                                                     | List<[OutputMessageContent](../../Models/Components/OutputMessageContent.md)> | :heavy_check_mark:                                                            | N/A                                                                           |
+| `Status`                                                                      | [OutputMessageStatus](../../Models/Components/OutputMessageStatus.md)         | :heavy_minus_sign:                                                            | N/A                                                                           |

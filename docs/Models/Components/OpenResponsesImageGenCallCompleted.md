@@ -1,0 +1,13 @@
+# OpenResponsesImageGenCallCompleted
+
+Image generation call completed
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                                      | [OpenResponsesImageGenCallCompletedType](../../Models/Components/OpenResponsesImageGenCallCompletedType.md) | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `ItemId`                                                                                                    | *string*                                                                                                    | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `OutputIndex`                                                                                               | *double*                                                                                                    | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `SequenceNumber`                                                                                            | *double*                                                                                                    | :heavy_check_mark:                                                                                          | N/A                                                                                                         |

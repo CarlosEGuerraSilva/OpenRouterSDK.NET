@@ -1,0 +1,9 @@
+# ListGuardrailMemberAssignmentsResponse
+
+
+## Fields
+
+| Field                                                                                                             | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `HttpMeta`                                                                                                        | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                                           | :heavy_check_mark:                                                                                                | N/A                                                                                                               |
+| `Object`                                                                                                          | [ListGuardrailMemberAssignmentsResponseBody](../../Models/Requests/ListGuardrailMemberAssignmentsResponseBody.md) | :heavy_minus_sign:                                                                                                | List of member assignments                                                                                        |

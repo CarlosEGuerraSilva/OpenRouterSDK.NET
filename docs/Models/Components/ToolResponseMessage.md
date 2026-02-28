@@ -1,0 +1,12 @@
+# ToolResponseMessage
+
+Tool response message
+
+
+## Fields
+
+| Field                                                                               | Type                                                                                | Required                                                                            | Description                                                                         | Example                                                                             |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `Role`                                                                              | [ToolResponseMessageRole](../../Models/Components/ToolResponseMessageRole.md)       | :heavy_check_mark:                                                                  | N/A                                                                                 |                                                                                     |
+| `Content`                                                                           | [ToolResponseMessageContent](../../Models/Components/ToolResponseMessageContent.md) | :heavy_check_mark:                                                                  | Tool response content                                                               | The weather in San Francisco is 72°F and sunny.                                     |
+| `ToolCallId`                                                                        | *string*                                                                            | :heavy_check_mark:                                                                  | ID of the assistant message tool call this message responds to                      | call_abc123                                                                         |

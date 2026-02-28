@@ -1,0 +1,10 @@
+# OpenAIResponsesInputMessage3
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Type`                                                                                          | [OpenAIResponsesInputTypeMessage3](../../Models/Components/OpenAIResponsesInputTypeMessage3.md) | :heavy_minus_sign:                                                                              | N/A                                                                                             |
+| `Role`                                                                                          | [OpenAIResponsesInputRoleEnum1](../../Models/Components/OpenAIResponsesInputRoleEnum1.md)       | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Content`                                                                                       | [OpenAIResponsesInputContent5](../../Models/Components/OpenAIResponsesInputContent5.md)         | :heavy_check_mark:                                                                              | N/A                                                                                             |

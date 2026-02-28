@@ -1,0 +1,9 @@
+# ChatMessageContentItemImageImageUrl
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `Url`                                                                                             | *string*                                                                                          | :heavy_check_mark:                                                                                | URL of the image (data: URLs supported)                                                           |
+| `Detail`                                                                                          | [ChatMessageContentItemImageDetail](../../Models/Components/ChatMessageContentItemImageDetail.md) | :heavy_minus_sign:                                                                                | Image detail level for vision models                                                              |

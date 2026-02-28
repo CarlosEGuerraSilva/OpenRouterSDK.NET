@@ -1,0 +1,10 @@
+# CreateEmbeddingsResponse
+
+
+## Fields
+
+| Field                                                                                 | Type                                                                                  | Required                                                                              | Description                                                                           |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `HttpMeta`                                                                            | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                               | :heavy_check_mark:                                                                    | N/A                                                                                   |
+| `Object`                                                                              | [CreateEmbeddingsResponseBody](../../Models/Requests/CreateEmbeddingsResponseBody.md) | :heavy_minus_sign:                                                                    | Embedding response                                                                    |
+| `Res`                                                                                 | *string*                                                                              | :heavy_minus_sign:                                                                    | Embedding response                                                                    |

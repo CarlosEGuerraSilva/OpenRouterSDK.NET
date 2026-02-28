@@ -1,0 +1,253 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: C# naming and compatibility fixes
+  version: 0.0.0
+actions:
+  # ============================================================
+  # FIX 1: Rename "models" operation group to avoid C# namespace
+  # collision between Models.cs class and Models/ namespace
+  # ============================================================
+  - target: $.paths["/models"].get
+    description: Rename models list endpoint group
+    update:
+      x-speakeasy-group: AIModels
+      x-speakeasy-name-override: List
+
+  - target: $.paths["/models/{author}/{slug}"].get
+    description: Rename model detail endpoint group
+    update:
+      x-speakeasy-group: AIModels
+      x-speakeasy-name-override: Get
+
+  - target: $.paths["/models/count"].get
+    description: Rename models count endpoint group
+    update:
+      x-speakeasy-group: AIModels
+      x-speakeasy-name-override: Count
+
+  - target: $.paths["/models/user"].get
+    description: Rename user models endpoint group
+    update:
+      x-speakeasy-group: AIModels
+      x-speakeasy-name-override: ListUser
+
+  # ============================================================
+  # FIX 2: Replace the problematic OpenAIResponsesInput anyOf
+  # that has "- nullable: true" as a bare union member.
+  # ============================================================
+  - target: $.components.schemas.OpenAIResponsesInput
+    description: >
+      Replace the anyOf union that includes a bare "nullable: true" member.
+    update:
+      nullable: true
+      anyOf:
+        - type: string
+        - type: array
+          items:
+            anyOf:
+              - type: object
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - message
+                  role:
+                    type: string
+                    enum:
+                      - user
+                      - system
+                      - assistant
+                      - developer
+                  content:
+                    anyOf:
+                      - type: array
+                        items:
+                          oneOf:
+                            - $ref: "#/components/schemas/ResponseInputText"
+                            - $ref: "#/components/schemas/ResponseInputImage"
+                            - $ref: "#/components/schemas/ResponseInputFile"
+                            - $ref: "#/components/schemas/ResponseInputAudio"
+                          discriminator:
+                            propertyName: type
+                            mapping:
+                              input_text: "#/components/schemas/ResponseInputText"
+                              input_image: "#/components/schemas/ResponseInputImage"
+                              input_file: "#/components/schemas/ResponseInputFile"
+                              input_audio: "#/components/schemas/ResponseInputAudio"
+                      - type: string
+                required:
+                  - role
+                  - content
+              - type: object
+                properties:
+                  id:
+                    type: string
+                  type:
+                    type: string
+                    enum:
+                      - message
+                  role:
+                    type: string
+                    enum:
+                      - user
+                      - system
+                      - developer
+                  content:
+                    type: array
+                    items:
+                      oneOf:
+                        - $ref: "#/components/schemas/ResponseInputText"
+                        - $ref: "#/components/schemas/ResponseInputImage"
+                        - $ref: "#/components/schemas/ResponseInputFile"
+                        - $ref: "#/components/schemas/ResponseInputAudio"
+                      discriminator:
+                        propertyName: type
+                        mapping:
+                          input_text: "#/components/schemas/ResponseInputText"
+                          input_image: "#/components/schemas/ResponseInputImage"
+                          input_file: "#/components/schemas/ResponseInputFile"
+                          input_audio: "#/components/schemas/ResponseInputAudio"
+                required:
+                  - id
+                  - role
+                  - content
+              - type: object
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - function_call_output
+                  id:
+                    type: string
+                    nullable: true
+                  call_id:
+                    type: string
+                  output:
+                    type: string
+                  status:
+                    $ref: "#/components/schemas/ToolCallStatus"
+                required:
+                  - type
+                  - call_id
+                  - output
+              - type: object
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - function_call
+                  call_id:
+                    type: string
+                  name:
+                    type: string
+                  arguments:
+                    type: string
+                  id:
+                    type: string
+                  status:
+                    $ref: "#/components/schemas/ToolCallStatus"
+                required:
+                  - type
+                  - call_id
+                  - name
+                  - arguments
+              - $ref: "#/components/schemas/OutputItemImageGenerationCall"
+              - $ref: "#/components/schemas/OutputMessage"
+
+  # ============================================================
+  # FIX 3: Flatten anyOf status fields
+  # ============================================================
+  - target: $.components.schemas.OutputMessage.properties.status
+    description: Remove the anyOf-based status from OutputMessage
+    remove: true
+
+  - target: $.components.schemas.OutputMessage.properties
+    description: Re-add status as a simple enum on OutputMessage
+    update:
+      status:
+        type: string
+        enum:
+          - completed
+          - incomplete
+          - in_progress
+
+  - target: $.components.schemas.OutputItemReasoning.properties.status
+    description: Remove the anyOf-based status from OutputItemReasoning
+    remove: true
+
+  - target: $.components.schemas.OutputItemReasoning.properties
+    description: Re-add status as a simple enum on OutputItemReasoning
+    update:
+      status:
+        type: string
+        enum:
+          - completed
+          - incomplete
+          - in_progress
+
+  - target: $.components.schemas.OutputItemFunctionCall.properties.status
+    description: Remove the anyOf-based status from OutputItemFunctionCall
+    remove: true
+
+  - target: $.components.schemas.OutputItemFunctionCall.properties
+    description: Re-add status as a simple enum on OutputItemFunctionCall
+    update:
+      status:
+        type: string
+        enum:
+          - completed
+          - incomplete
+          - in_progress
+
+  # ============================================================
+  # FIX 4: Fix CS0542 — the OpenAIResponsesToolChoice schema has
+  # an inner object with property "type" whose value is an anyOf
+  # of two single-value enums. Speakeasy generates a C# class
+  # called "Type" with a member "Type" → CS0542.
+  #
+  # Strategy: Remove the entire OpenAIResponsesToolChoice schema,
+  # then re-add it with the inner "type" property using a simple
+  # enum instead of anyOf.
+  # ============================================================
+  - target: $.components.schemas.OpenAIResponsesToolChoice
+    description: Remove the original OpenAIResponsesToolChoice schema entirely
+    remove: true
+
+  - target: $.components.schemas
+    description: >
+      Re-add OpenAIResponsesToolChoice with the inner type property
+      as a simple multi-value enum instead of anyOf of single-value enums.
+      This prevents Speakeasy from generating a separate "Type" class.
+    update:
+      OpenAIResponsesToolChoice:
+        anyOf:
+          - type: string
+            enum:
+              - auto
+          - type: string
+            enum:
+              - none
+          - type: string
+            enum:
+              - required
+          - type: object
+            properties:
+              type:
+                type: string
+                enum:
+                  - function
+              name:
+                type: string
+            required:
+              - type
+              - name
+          - type: object
+            properties:
+              type:
+                type: string
+                enum:
+                  - web_search_preview
+                  - web_search_preview_2025_03_11
+            required:
+              - type

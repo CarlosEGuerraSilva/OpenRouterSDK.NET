@@ -1,0 +1,14 @@
+# ReasoningDetailSummary
+
+Reasoning detail summary schema
+
+
+## Fields
+
+| Field                                                                                   | Type                                                                                    | Required                                                                                | Description                                                                             |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `Type`                                                                                  | [ReasoningDetailSummaryType](../../Models/Components/ReasoningDetailSummaryType.md)     | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Summary`                                                                               | *string*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Id`                                                                                    | *string*                                                                                | :heavy_minus_sign:                                                                      | N/A                                                                                     |
+| `Format`                                                                                | [ReasoningDetailSummaryFormat](../../Models/Components/ReasoningDetailSummaryFormat.md) | :heavy_minus_sign:                                                                      | N/A                                                                                     |
+| `Index`                                                                                 | *double*                                                                                | :heavy_minus_sign:                                                                      | N/A                                                                                     |

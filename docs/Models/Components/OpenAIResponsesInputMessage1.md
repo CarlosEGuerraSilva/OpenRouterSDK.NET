@@ -1,0 +1,10 @@
+# OpenAIResponsesInputMessage1
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Type`                                                                                          | [OpenAIResponsesInputTypeMessage1](../../Models/Components/OpenAIResponsesInputTypeMessage1.md) | :heavy_minus_sign:                                                                              | N/A                                                                                             |
+| `Role`                                                                                          | [OpenAIResponsesInputRoleUnion1](../../Models/Components/OpenAIResponsesInputRoleUnion1.md)     | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Content`                                                                                       | [OpenAIResponsesInputContent2](../../Models/Components/OpenAIResponsesInputContent2.md)         | :heavy_check_mark:                                                                              | N/A                                                                                             |

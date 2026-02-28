@@ -1,0 +1,12 @@
+# OpenResponsesInputMessageItemContentInputImage
+
+Image input content item
+
+
+## Fields
+
+| Field                                                                                                           | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                                          | [OpenResponsesInputMessageItemContentType](../../Models/Components/OpenResponsesInputMessageItemContentType.md) | :heavy_check_mark:                                                                                              | N/A                                                                                                             |
+| `Detail`                                                                                                        | [OpenResponsesInputMessageItemDetail](../../Models/Components/OpenResponsesInputMessageItemDetail.md)           | :heavy_check_mark:                                                                                              | N/A                                                                                                             |
+| `ImageUrl`                                                                                                      | *string*                                                                                                        | :heavy_minus_sign:                                                                                              | N/A                                                                                                             |

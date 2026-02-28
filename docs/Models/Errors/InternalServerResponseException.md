@@ -1,0 +1,12 @@
+# InternalServerResponseException
+
+Internal Server Error - Unexpected server error
+
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `Error`                                                                                       | [InternalServerResponseErrorData](../../Models/Components/InternalServerResponseErrorData.md) | :heavy_check_mark:                                                                            | Error data for InternalServerResponse                                                         | {<br/>"code": 500,<br/>"message": "Internal Server Error"<br/>}                               |
+| `UserId`                                                                                      | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `HttpMeta`                                                                                    | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                       | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |

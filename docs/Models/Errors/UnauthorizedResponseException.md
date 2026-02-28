@@ -1,0 +1,12 @@
+# UnauthorizedResponseException
+
+Unauthorized - Authentication required or invalid credentials
+
+
+## Fields
+
+| Field                                                                                     | Type                                                                                      | Required                                                                                  | Description                                                                               | Example                                                                                   |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `Error`                                                                                   | [UnauthorizedResponseErrorData](../../Models/Components/UnauthorizedResponseErrorData.md) | :heavy_check_mark:                                                                        | Error data for UnauthorizedResponse                                                       | {<br/>"code": 401,<br/>"message": "Missing Authentication header"<br/>}                   |
+| `UserId`                                                                                  | *string*                                                                                  | :heavy_minus_sign:                                                                        | N/A                                                                                       |                                                                                           |
+| `HttpMeta`                                                                                | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                   | :heavy_check_mark:                                                                        | N/A                                                                                       |                                                                                           |

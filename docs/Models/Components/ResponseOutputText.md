@@ -1,0 +1,11 @@
+# ResponseOutputText
+
+
+## Fields
+
+| Field                                                                                   | Type                                                                                    | Required                                                                                | Description                                                                             |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `Type`                                                                                  | [ResponseOutputTextType](../../Models/Components/ResponseOutputTextType.md)             | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Text`                                                                                  | *string*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Annotations`                                                                           | List<[OpenAIResponsesAnnotation](../../Models/Components/OpenAIResponsesAnnotation.md)> | :heavy_minus_sign:                                                                      | N/A                                                                                     |
+| `Logprobs`                                                                              | List<[Logprob](../../Models/Components/Logprob.md)>                                     | :heavy_minus_sign:                                                                      | N/A                                                                                     |

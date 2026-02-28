@@ -1,0 +1,12 @@
+# RequestTimeoutResponseException
+
+Request Timeout - Operation exceeded time limit
+
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `Error`                                                                                       | [RequestTimeoutResponseErrorData](../../Models/Components/RequestTimeoutResponseErrorData.md) | :heavy_check_mark:                                                                            | Error data for RequestTimeoutResponse                                                         | {<br/>"code": 408,<br/>"message": "Operation timed out. Please try again later."<br/>}        |
+| `UserId`                                                                                      | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `HttpMeta`                                                                                    | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                       | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |

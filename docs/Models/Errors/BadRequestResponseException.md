@@ -1,0 +1,12 @@
+# BadRequestResponseException
+
+Bad Request - Invalid request parameters or malformed input
+
+
+## Fields
+
+| Field                                                                                 | Type                                                                                  | Required                                                                              | Description                                                                           | Example                                                                               |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `Error`                                                                               | [BadRequestResponseErrorData](../../Models/Components/BadRequestResponseErrorData.md) | :heavy_check_mark:                                                                    | Error data for BadRequestResponse                                                     | {<br/>"code": 400,<br/>"message": "Invalid request parameters"<br/>}                  |
+| `UserId`                                                                              | *string*                                                                              | :heavy_minus_sign:                                                                    | N/A                                                                                   |                                                                                       |
+| `HttpMeta`                                                                            | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                               | :heavy_check_mark:                                                                    | N/A                                                                                   |                                                                                       |

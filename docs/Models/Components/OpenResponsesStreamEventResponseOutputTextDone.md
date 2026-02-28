@@ -1,0 +1,16 @@
+# OpenResponsesStreamEventResponseOutputTextDone
+
+Event emitted when text streaming is complete
+
+
+## Fields
+
+| Field                                                                               | Type                                                                                | Required                                                                            | Description                                                                         |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `Type`                                                                              | [TypeResponseOutputTextDone](../../Models/Components/TypeResponseOutputTextDone.md) | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `OutputIndex`                                                                       | *double*                                                                            | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `ItemId`                                                                            | *string*                                                                            | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `ContentIndex`                                                                      | *double*                                                                            | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `Text`                                                                              | *string*                                                                            | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `SequenceNumber`                                                                    | *double*                                                                            | :heavy_check_mark:                                                                  | N/A                                                                                 |
+| `Logprobs`                                                                          | List<[OpenResponsesLogProbs](../../Models/Components/OpenResponsesLogProbs.md)>     | :heavy_check_mark:                                                                  | N/A                                                                                 |

@@ -1,0 +1,15 @@
+# OpenResponsesStreamEventResponseContentPartAdded
+
+Event emitted when a new content part is added to an output item
+
+
+## Fields
+
+| Field                                                                                   | Type                                                                                    | Required                                                                                | Description                                                                             |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `Type`                                                                                  | [TypeResponseContentPartAdded](../../Models/Components/TypeResponseContentPartAdded.md) | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `OutputIndex`                                                                           | *double*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `ItemId`                                                                                | *string*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `ContentIndex`                                                                          | *double*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Part`                                                                                  | [Part1](../../Models/Components/Part1.md)                                               | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `SequenceNumber`                                                                        | *double*                                                                                | :heavy_check_mark:                                                                      | N/A                                                                                     |

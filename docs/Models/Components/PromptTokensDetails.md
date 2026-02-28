@@ -1,0 +1,13 @@
+# PromptTokensDetails
+
+Detailed prompt token usage
+
+
+## Fields
+
+| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `CachedTokens`                                                                                   | *double*                                                                                         | :heavy_minus_sign:                                                                               | Cached prompt tokens                                                                             |
+| `CacheWriteTokens`                                                                               | *double*                                                                                         | :heavy_minus_sign:                                                                               | Tokens written to cache. Only returned for models with explicit caching and cache write pricing. |
+| `AudioTokens`                                                                                    | *double*                                                                                         | :heavy_minus_sign:                                                                               | Audio input tokens                                                                               |
+| `VideoTokens`                                                                                    | *double*                                                                                         | :heavy_minus_sign:                                                                               | Video input tokens                                                                               |

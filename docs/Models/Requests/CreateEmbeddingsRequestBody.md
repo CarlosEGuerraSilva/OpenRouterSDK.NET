@@ -1,0 +1,14 @@
+# CreateEmbeddingsRequestBody
+
+
+## Fields
+
+| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `Input`                                                               | [InputUnion](../../Models/Requests/InputUnion.md)                     | :heavy_check_mark:                                                    | N/A                                                                   |
+| `Model`                                                               | *string*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
+| `EncodingFormat`                                                      | [EncodingFormat](../../Models/Requests/EncodingFormat.md)             | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `Dimensions`                                                          | *long*                                                                | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `User`                                                                | *string*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |
+| `Provider`                                                            | [ProviderPreferences](../../Models/Components/ProviderPreferences.md) | :heavy_minus_sign:                                                    | Provider routing preferences for the request.                         |
+| `InputType`                                                           | *string*                                                              | :heavy_minus_sign:                                                    | N/A                                                                   |

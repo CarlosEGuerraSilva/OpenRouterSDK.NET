@@ -1,0 +1,9 @@
+# DeleteGuardrailResponse
+
+
+## Fields
+
+| Field                                                                               | Type                                                                                | Required                                                                            | Description                                                                         | Example                                                                             |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `HttpMeta`                                                                          | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                             | :heavy_check_mark:                                                                  | N/A                                                                                 |                                                                                     |
+| `Object`                                                                            | [DeleteGuardrailResponseBody](../../Models/Requests/DeleteGuardrailResponseBody.md) | :heavy_minus_sign:                                                                  | Guardrail deleted successfully                                                      | {<br/>"deleted": true<br/>}                                                         |

@@ -1,0 +1,12 @@
+# PayloadTooLargeResponseException
+
+Payload Too Large - Request payload exceeds size limits
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     | Example                                                                                         |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Error`                                                                                         | [PayloadTooLargeResponseErrorData](../../Models/Components/PayloadTooLargeResponseErrorData.md) | :heavy_check_mark:                                                                              | Error data for PayloadTooLargeResponse                                                          | {<br/>"code": 413,<br/>"message": "Request payload too large"<br/>}                             |
+| `UserId`                                                                                        | *string*                                                                                        | :heavy_minus_sign:                                                                              | N/A                                                                                             |                                                                                                 |
+| `HttpMeta`                                                                                      | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                         | :heavy_check_mark:                                                                              | N/A                                                                                             |                                                                                                 |

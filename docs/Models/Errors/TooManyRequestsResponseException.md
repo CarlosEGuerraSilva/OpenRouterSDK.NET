@@ -1,0 +1,12 @@
+# TooManyRequestsResponseException
+
+Too Many Requests - Rate limit exceeded
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     | Example                                                                                         |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Error`                                                                                         | [TooManyRequestsResponseErrorData](../../Models/Components/TooManyRequestsResponseErrorData.md) | :heavy_check_mark:                                                                              | Error data for TooManyRequestsResponse                                                          | {<br/>"code": 429,<br/>"message": "Rate limit exceeded"<br/>}                                   |
+| `UserId`                                                                                        | *string*                                                                                        | :heavy_minus_sign:                                                                              | N/A                                                                                             |                                                                                                 |
+| `HttpMeta`                                                                                      | [HTTPMetadata](../../Models/Components/HTTPMetadata.md)                                         | :heavy_check_mark:                                                                              | N/A                                                                                             |                                                                                                 |

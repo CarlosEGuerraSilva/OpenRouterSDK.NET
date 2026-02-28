@@ -1,0 +1,14 @@
+# ReasoningDetailEncrypted
+
+Reasoning detail encrypted schema
+
+
+## Fields
+
+| Field                                                                                       | Type                                                                                        | Required                                                                                    | Description                                                                                 |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `Type`                                                                                      | [ReasoningDetailEncryptedType](../../Models/Components/ReasoningDetailEncryptedType.md)     | :heavy_check_mark:                                                                          | N/A                                                                                         |
+| `Data`                                                                                      | *string*                                                                                    | :heavy_check_mark:                                                                          | N/A                                                                                         |
+| `Id`                                                                                        | *string*                                                                                    | :heavy_minus_sign:                                                                          | N/A                                                                                         |
+| `Format`                                                                                    | [ReasoningDetailEncryptedFormat](../../Models/Components/ReasoningDetailEncryptedFormat.md) | :heavy_minus_sign:                                                                          | N/A                                                                                         |
+| `Index`                                                                                     | *double*                                                                                    | :heavy_minus_sign:                                                                          | N/A                                                                                         |
